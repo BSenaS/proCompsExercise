@@ -4,7 +4,7 @@ import TeamCompPage from "./pages/TeamCompPage";
 function App() {
   return (
     <>
-      <div className="bg-bgGeneral w-full h-screen">
+      <div className="bg-bgGeneral w-full">
         <TeamCompPage />
       </div>
     </>
