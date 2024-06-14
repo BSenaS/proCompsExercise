@@ -24,144 +24,130 @@ export const gameData = [
   {
     compName: "Protech Ashe (Late)",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Protect",
-        icon: protectIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Protect",
+      icon: protectIcon,
+    },
     scale: scalingLate,
     createTime: "8 hours ago",
   },
   {
     compName: "Crust the enemy (Early)",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
     scale: scalingEarly,
     createTime: "8 hours ago",
   },
   {
-    compName: "Favorite comp for scaling in to late game (Late)",
+    compName: "Favorite comp for scaling into late game (Late)",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Siege",
-        icon: siegeIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Siege",
+      icon: siegeIcon,
+    },
+
     scale: scalingLate,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example 1",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Pick",
-        icon: pickIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Pick",
+      icon: pickIcon,
+    },
+
     scale: scalingMid,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example 2",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Split",
-        icon: splitIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Split",
+      icon: splitIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
   {
     compName: "CompName Example Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
-    gameStyles: [
-      {
-        name: "Engage",
-        icon: engageIcon,
-      },
-    ],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
     scale: scalingAllAround,
     createTime: "8 hours ago",
   },
