@@ -1,10 +1,11 @@
 import "./App.css";
+import TeamCompPage from "./pages/TeamCompPage";
 
 function App() {
   return (
     <>
-      <div>
-        <p>Hello World!</p>
+      <div className="bg-bgGeneral w-full h-full">
+        <TeamCompPage />
       </div>
     </>
   );
