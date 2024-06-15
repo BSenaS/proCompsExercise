@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import teamIcon from "../assets/teamIcon.svg";
 import filterEngage from "../assets/GameStyleFilters/filterEngage.svg";
 import filterPick from "../assets/GameStyleFilters/filterPick.svg";
 import filterProtect from "../assets/GameStyleFilters/filterProtect.svg";
 import filterSiege from "../assets/GameStyleFilters/filterSiege.svg";
 import filterSplit from "../assets/GameStyleFilters/filterSplit.svg";
+import { CompContext } from "../context/CompContext";
 
 const filterIcons = [
   filterEngage,
@@ -14,12 +15,17 @@ const filterIcons = [
   filterSplit,
 ];
 export const GameStyle = () => {
+  const { gameStyleFilter } = useContext(CompContext);
   const [activeFilter, setActiveFilter] = useState(null);
+  const filterNames = ["Engage", "Pick", "Protect", "Siege", "Split"];
 
   const handleClick = (index) => {
-    setActiveFilter(index === activeFilter ? null : index);
+    const newActiveFilter = index === activeFilter ? null : index;
+    setActiveFilter(newActiveFilter);
+    const filterName =
+      newActiveFilter === null ? null : filterNames[newActiveFilter];
+    gameStyleFilter(filterName);
   };
-  console.log(activeFilter);
 
   return (
     <div className="flex flex-col text-white pt-6 gap-y-4">

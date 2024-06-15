@@ -29,7 +29,7 @@ export const gameData = [
       icon: protectIcon,
     },
     scale: scalingLate,
-    createTime: "8 hours ago",
+    createTime: 8,
   },
   {
     compName: "Crust the enemy (Early)",
@@ -39,7 +39,7 @@ export const gameData = [
       icon: engageIcon,
     },
     scale: scalingEarly,
-    createTime: "8 hours ago",
+    createTime: 7,
   },
   {
     compName: "Favorite comp for scaling into late game (Late)",
@@ -50,7 +50,7 @@ export const gameData = [
     },
 
     scale: scalingLate,
-    createTime: "8 hours ago",
+    createTime: 6,
   },
   {
     compName: "CompName Example 1",
@@ -61,7 +61,7 @@ export const gameData = [
     },
 
     scale: scalingMid,
-    createTime: "8 hours ago",
+    createTime: 5,
   },
   {
     compName: "CompName Example 2",
@@ -72,7 +72,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 4,
   },
   {
     compName: "CompName Example Win",
@@ -83,7 +83,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 3,
   },
   {
     compName: "CompName Example Win",
@@ -94,7 +94,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 2,
   },
   {
     compName: "CompName Example Win",
@@ -105,7 +105,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 1,
   },
   {
     compName: "CompName Example Win",
@@ -116,7 +116,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 2,
   },
   {
     compName: "CompName Example Win",
@@ -127,7 +127,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 2,
   },
   {
     compName: "CompName Example Win",
@@ -138,7 +138,7 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 2,
   },
   {
     compName: "CompName Example Win",
@@ -149,6 +149,28 @@ export const gameData = [
     },
 
     scale: scalingAllAround,
-    createTime: "8 hours ago",
+    createTime: 1,
+  },
+  {
+    compName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    champions: [Ahri, Akali, Ashe, Brand, Briar],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
+    scale: scalingAllAround,
+    createTime: 12,
+  },
+  {
+    compName: "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+    champions: [Ahri, Akali, Ashe, Brand, Briar],
+    gameStyles: {
+      name: "Engage",
+      icon: engageIcon,
+    },
+
+    scale: scalingAllAround,
+    createTime: 14,
   },
 ];

@@ -5,7 +5,7 @@ import { CompContext } from "../context/CompContext";
 
 export const TeamComp = ({ team, index }) => {
   //Some elements only visible in mobile view, search md:hidden for them.
-  const { handleCurrentComp } = useContext(CompContext);
+  const { handleCurrentComp, handleDelete } = useContext(CompContext);
   return (
     <div
       className="flex mx-auto py-4 border-2 border-[#2D2D2D] 
@@ -39,7 +39,7 @@ export const TeamComp = ({ team, index }) => {
         </div>
         <div className="flex gap-1 md:w-1/6 md:items-center">
           <p className="md:hidden font-semibold">Added:</p>
-          <span className="md:mx-auto">{team.createTime}</span>
+          <span className="md:mx-auto">{`${team.createTime} hours ago`}</span>
         </div>
         {/* On Click, will lead to pop-up */}
         <div
@@ -50,7 +50,10 @@ export const TeamComp = ({ team, index }) => {
         </div>
         {/* On Click, will delete the individual team*/}
 
-        <div className="rounded-full w-8 h-8 bg-[#2D2D2D] p-2 flex items-center justify-center absolute right-[-1rem] top-1/2 transform -translate-y-1/2 hover:bg-[#FF0000] text-[#5E5E5E] hover:text-white  opacity-0 group-hover:opacity-100 transition-all duration-300 mx-auto">
+        <div
+          className="rounded-full w-8 h-8 bg-[#2D2D2D] p-2 flex items-center justify-center absolute right-[-1rem] top-1/2 transform -translate-y-1/2 hover:bg-[#FF0000] text-[#5E5E5E] hover:text-white  opacity-0 group-hover:opacity-100 transition-all duration-300 mx-auto"
+          onClick={() => handleDelete(team)}
+        >
           <FaMinus size={24} />
         </div>
       </div>
