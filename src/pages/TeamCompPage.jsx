@@ -4,7 +4,7 @@ import { TeamCompList } from "../components/TeamCompList";
 
 const TeamCompPage = () => {
   return (
-    <div className="flex flex-col gap-8 max-w-[1056px] mx-auto">
+    <div className="flex flex-col gap-8 max-w-[1056px] mx-auto h-full">
       <GameStyle />
       <TeamCompList />
     </div>
