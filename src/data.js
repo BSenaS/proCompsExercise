@@ -1,11 +1,11 @@
 //Api simulation
 
 //Champions Assets
-import Ahri from "../public/champions/Ahri.png";
-import Akali from "../public/champions/Akali.png";
-import Ashe from "../public/champions/Ashe.png";
-import Brand from "../public/champions/Brand.png";
-import Briar from "../public/champions/Briar.png";
+import Ahri from "/champions/Ahri.png";
+import Akali from "/champions/Akali.png";
+import Ashe from "/champions/Ashe.png";
+import Brand from "/champions/Brand.png";
+import Briar from "/champions/Briar.png";
 
 //GameStyles assets.
 import engageIcon from "./assets/GameStyleIcons/engageIcon.svg";
