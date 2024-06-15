@@ -46,7 +46,7 @@ export const FilterComps = () => {
   console.log(sortOrder);
 
   return (
-    <div className="w-11/12 mx-auto text-primaryText hidden md:block">
+    <div className="w-11/12 mx-auto text-secondaryText hidden md:block text-sm">
       <div className="flex flex-row w-11/12 mx-auto">
         <div
           className="w-[25%] cursor-pointer flex items-center"
@@ -54,16 +54,16 @@ export const FilterComps = () => {
         >
           <span
             className={
-              sortField === "compName" ? "text-[#06D6BE]" : "text-primaryText"
+              sortField === "compName" ? "text-[#06D6BE]" : "text-secondaryText"
             }
           >
             Name
           </span>
           {sortField === "compName" && sortOrder === "asc" && (
-            <FaCaretUp size={24} className="text-[#06D6BE]" />
+            <FaCaretUp size={20} className="text-[#06D6BE]" />
           )}
           {sortField === "compName" && sortOrder === "desc" && (
-            <FaCaretDown size={24} className="text-[#06D6BE]" />
+            <FaCaretDown size={20} className="text-[#06D6BE]" />
           )}
         </div>
         <div className="w-[22.5%] cursor-pointer">Champions</div>
@@ -74,17 +74,19 @@ export const FilterComps = () => {
         >
           <span
             className={`${
-              sortField === "gameStyles" ? "text-[#06D6BE]" : "text-primaryText"
+              sortField === "gameStyles"
+                ? "text-[#06D6BE]"
+                : "text-secondaryText"
             } ml-8 `}
           >
             Gamestyles
           </span>
 
           {sortField === "gameStyles" && sortOrder === "asc" && (
-            <FaCaretUp size={24} className="text-[#06D6BE]" />
+            <FaCaretUp size={20} className="text-[#06D6BE]" />
           )}
           {sortField === "gameStyles" && sortOrder === "desc" && (
-            <FaCaretDown size={24} className="text-[#06D6BE]" />
+            <FaCaretDown size={20} className="text-[#06D6BE]" />
           )}
         </div>
 
@@ -95,17 +97,19 @@ export const FilterComps = () => {
         >
           <span
             className={`${
-              sortField === "createTime" ? "text-[#06D6BE]" : "text-primaryText"
+              sortField === "createTime"
+                ? "text-[#06D6BE]"
+                : "text-secondaryText"
             } ml-11 `}
           >
             Added
           </span>
 
           {sortField === "createTime" && sortOrder === "asc" && (
-            <FaCaretUp size={24} className="text-[#06D6BE]" />
+            <FaCaretUp size={20} className="text-[#06D6BE]" />
           )}
           {sortField === "createTime" && sortOrder === "desc" && (
-            <FaCaretDown size={24} className="text-[#06D6BE]" />
+            <FaCaretDown size={20} className="text-[#06D6BE]" />
           )}
         </div>
       </div>

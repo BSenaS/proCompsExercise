@@ -6,6 +6,7 @@ import { CompContext } from "../context/CompContext";
 export const TeamComp = ({ team, index }) => {
   //Some elements only visible in mobile view, search md:hidden for them.
   const { handleCurrentComp, handleDelete } = useContext(CompContext);
+
   return (
     <div
       className="flex mx-auto py-4 border-2 border-[#2D2D2D] 
@@ -14,7 +15,9 @@ export const TeamComp = ({ team, index }) => {
       <div className="flex flex-col gap-2 md:gap-0 mx-2 w-full md:w-11/12 md:flex-row">
         <div className="flex gap-1 md:items-center md:w-1/4 font-bold">
           <p className="md:hidden">Name:</p>
-          <h2 className="w-full md:max-w-[200px] ">{team.compName}</h2>
+          <h2 className="w-full md:max-w-[200px] truncate-3-lines">
+            {team.compName}
+          </h2>
         </div>
         <div className="flex flex-row flex-wrap md:w-1/4 md:items-center md:justify-center md:border-l md:border-l-[#2D2D2D]">
           <p className="mr-1 md:hidden font-semibold">Champions: </p>
@@ -31,7 +34,7 @@ export const TeamComp = ({ team, index }) => {
         <div className="flex flex-row gap-2 items-center md:w-1/6 md:justify-center">
           <p className="md:hidden font-semibold">Game Style:</p>
           <img src={team.gameStyles.icon} alt={team.index} />
-          <span>{team.gameStyles.name}</span>
+          <span className="text-secondaryText">{team.gameStyles.name}</span>
         </div>
         <div className="flex items-center gap-1 md:w-1/6">
           <p className="md:hidden font-semibold">Scale:</p>
@@ -39,14 +42,16 @@ export const TeamComp = ({ team, index }) => {
         </div>
         <div className="flex gap-1 md:w-1/6 md:items-center">
           <p className="md:hidden font-semibold">Added:</p>
-          <span className="md:mx-auto">{`${team.createTime} hours ago`}</span>
+          <span className="md:mx-auto text-secondaryText">{`${team.createTime} hours ago`}</span>
         </div>
         {/* On Click, will lead to pop-up */}
-        <div
-          className="flex w-12 h-12 mx-auto items-center justify-center rounded-full text-[#5E5E5E] border-2 border-[#5E5E5E] transition duration-300 ease-in-out hover:text-white hover:border-hidden hover:bg-[#07C5AF] cursor-pointer md:mr-0 opacity-0 group-hover:opacity-100 "
-          onClick={() => handleCurrentComp(team)}
-        >
-          <MdOutlineConstruction className="w-8 h-8" />
+        <div className="flex justify-center items-center h-full">
+          <div
+            className="flex w-12 h-12 mx-auto items-center justify-center align-center rounded-full text-[#5E5E5E] border-2 border-[#5E5E5E] transition duration-300 ease-in-out hover:text-white hover:border-hidden hover:bg-[#07C5AF] cursor-pointer md:mr-0 opacity-0 group-hover:opacity-100 "
+            onClick={() => handleCurrentComp(team)}
+          >
+            <MdOutlineConstruction className="w-8 h-12" />
+          </div>
         </div>
         {/* On Click, will delete the individual team*/}
 

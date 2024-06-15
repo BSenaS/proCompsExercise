@@ -27,3 +27,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Paragraph 3 line rule */
+
+.truncate-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

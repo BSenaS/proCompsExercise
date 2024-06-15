@@ -152,7 +152,8 @@ export const gameData = [
     createTime: 1,
   },
   {
-    compName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    compName:
+      "CompName Example Win Win Win Win Win Win Win Win Win Win Win Win",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
     gameStyles: {
       name: "Engage",
@@ -163,7 +164,8 @@ export const gameData = [
     createTime: 12,
   },
   {
-    compName: "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+    compName:
+      "CompName Example URF URF URF URF URF URF URF URF URF URF URF URF URF URF URF",
     champions: [Ahri, Akali, Ashe, Brand, Briar],
     gameStyles: {
       name: "Engage",
